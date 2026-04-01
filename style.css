@@ -1,0 +1,39 @@
+.grayscale-img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+.group:hover .grayscale-img {
+    filter: grayscale(0%);
+}
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease-out;
+}
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
