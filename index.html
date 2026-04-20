@@ -77,8 +77,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons (loaded lazily from script.js) -->
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -108,7 +107,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <a href="https://wa.me/919894803044" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-4 sm:px-6 py-2.5 rounded-lg font-label text-xs sm:text-sm font-semibold hover:opacity-80 transition-all active:scale-95 duration-300 whitespace-nowrap">
+                <a href="https://wa.me/919894803044" target="_blank" rel="noopener noreferrer" class="bg-primary-container text-white px-4 sm:px-6 py-2.5 rounded-lg font-label text-xs sm:text-sm font-semibold hover:opacity-90 transition-all active:scale-95 duration-300 whitespace-nowrap">
                     Chat Now
                 </a>
             </div>
@@ -129,7 +128,7 @@
     <section class="relative min-h-[90vh] flex items-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden py-16 sm:py-20 pt-28 sm:pt-32">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-center w-full">
             <div class="md:col-span-7 z-10 reveal-left active">
-                <span class="inline-block font-label text-primary font-bold tracking-widest text-xs uppercase mb-4">Available for Freelance</span>
+                <span class="inline-block font-label bg-primary-container text-white font-bold tracking-widest text-xs uppercase mb-4 px-2 py-1 rounded">Available for Freelance</span>
                 <h1 class="font-headline text-4xl sm:text-5xl md:text-8xl font-bold tracking-tighter text-on-surface leading-[0.9] mb-6">
                     I’m Prince Immanuel
                     <span class="block text-primary">Website Developer</span>
@@ -142,7 +141,7 @@
                         Services
                         <i data-lucide="arrow-right" class="w-[18px] h-[18px]"></i>
                     </a>
-                    <a href="https://wa.me/919894803044" target="_blank" rel="noopener noreferrer" class="bg-slate-100 text-primary px-6 sm:px-8 py-4 rounded-md font-semibold hover:bg-slate-200 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
+                    <a href="https://wa.me/919894803044" target="_blank" rel="noopener noreferrer" class="bg-slate-900 text-white px-6 sm:px-8 py-4 rounded-md font-semibold hover:bg-slate-800 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
                         Chat Now
                         <i data-lucide="message-square" class="w-[18px] h-[18px]"></i>
                     </a>
@@ -154,7 +153,7 @@
                     <img 
                         class="w-full h-full object-cover grayscale-img" 
                         src="/assets/princeimmanuel.1.webp" 
-                        alt="Prince Immanuel"
+                        alt="Prince Immanuel — Website Developer at ImmanBuilds"
                         referrerpolicy="no-referrer"
                     >
                 </div>
@@ -327,7 +326,7 @@
                 </div>
 
                 <div class="mt-4">
-                    <a href="https://wa.me/919894803044" class="inline-block w-full text-center px-5 py-3 rounded-lg bg-primary text-white font-semibold hover:opacity-95 transition">Get Started</a>
+                    <a href="https://wa.me/919894803044" class="inline-block w-full text-center px-5 py-3 rounded-lg bg-primary-container text-white font-semibold hover:opacity-95 transition">Get Started</a>
                 </div>
             </div>
 
@@ -372,7 +371,7 @@
                         <img 
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 grayscale-img" 
                             src="/assets/Service Bureau Logistics.webp" 
-                            alt="Logistics Project"
+                            alt="Service Bureau Logistics LLP — WordPress business portfolio screenshot"
                             referrerpolicy="no-referrer"
                         >
                     </div>
@@ -387,6 +386,7 @@
                         <img 
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100 grayscale-img" 
                             src="/assets/LivzenStudio.webp"
+                            alt="LivzenStudio — Interior design website screenshot"
                             referrerpolicy="no-referrer"
                         >
                     </div>
@@ -421,16 +421,16 @@
                     </h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="reveal aspect-square bg-slate-100 rounded-xl overflow-hidden shadow-lg">
-                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event2.webp" alt="Training 0" referrerpolicy="no-referrer">
+                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event2.webp" alt="Cybersecurity awareness training session — presentation" referrerpolicy="no-referrer">
                         </div>
                         <div class="reveal aspect-square bg-slate-100 rounded-xl overflow-hidden shadow-lg sm:mt-8">
-                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event3.webp" alt="Training 1" referrerpolicy="no-referrer">
+                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event3.webp" alt="Cybersecurity hands-on workshop — attendees practicing labs" referrerpolicy="no-referrer">
                         </div>
                         <div class="reveal aspect-square bg-slate-100 rounded-xl overflow-hidden shadow-lg">
-                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event4.webp" alt="Training 2" referrerpolicy="no-referrer">
+                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event4.webp" alt="Cybersecurity community event — group photo" referrerpolicy="no-referrer">
                         </div>
                         <div class="reveal aspect-square bg-slate-100 rounded-xl overflow-hidden shadow-lg sm:mt-8">
-                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event5.webp" alt="Training 3" referrerpolicy="no-referrer">
+                            <img class="w-full h-full object-cover grayscale-img" src="/assets/Event5.webp" alt="Security training session — attendees and instructor" referrerpolicy="no-referrer">
                         </div>
                     </div>
                 </div>

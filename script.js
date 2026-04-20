@@ -22,15 +22,30 @@ tailwind.config = {
 
 // Initialize Lucide Icons
 document.addEventListener('DOMContentLoaded', () => {
-    if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-    }
-
     initializeMobileMenu();
 
     // Initial check for reveal elements
     reveal();
+
+    // Lazy-load lucide if there are icons on the page
+    loadLucideIfNeeded();
 });
+
+function loadLucideIfNeeded() {
+    if (!document.querySelector('[data-lucide]')) return;
+
+    // avoid loading multiple times
+    if (window.__lucideLoading) return;
+    window.__lucideLoading = true;
+
+    var script = document.createElement('script');
+    script.src = 'https://unpkg.com/lucide@latest';
+    script.async = true;
+    script.onload = function () {
+        try { if (typeof lucide !== 'undefined') lucide.createIcons(); } catch (e) { /* ignore */ }
+    };
+    document.head.appendChild(script);
+}
 
 // Scroll Reveal Animation
 function reveal() {
