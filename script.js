@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lazy-load lucide if there are icons on the page
     loadLucideIfNeeded();
+    // Initialize pricing tabs
+    try { initPricingTabs(); } catch (e) { /* ignore if not present */ }
 });
 
 function loadLucideIfNeeded() {
@@ -96,4 +98,50 @@ function initializeMobileMenu() {
             setMenuState(false);
         }
     });
+}
+
+/* Pricing tabs: simple, accessible tab switcher with animation */
+function initPricingTabs() {
+    var tabs = document.querySelectorAll('.pricing-tab');
+    if (!tabs || !tabs.length) return;
+
+    function showTab(name) {
+        // buttons
+        tabs.forEach(function (btn) {
+            var is = btn.getAttribute('data-tab') === name;
+            btn.setAttribute('aria-selected', String(is));
+        });
+
+        // contents
+        var contents = document.querySelectorAll('.tab-content');
+        contents.forEach(function (c) {
+            if (c.id === 'tab-' + name) {
+                c.classList.remove('hidden');
+                // small timeout to allow transition
+                requestAnimationFrame(function () { c.classList.add('active'); });
+            } else {
+                c.classList.remove('active');
+                // hide after transition (matches CSS transition duration)
+                setTimeout(function () { c.classList.add('hidden'); }, 420);
+            }
+        });
+    }
+
+    tabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var name = btn.getAttribute('data-tab');
+            showTab(name);
+        });
+        btn.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                var idx = Array.prototype.indexOf.call(tabs, btn);
+                var next = e.key === 'ArrowRight' ? (idx + 1) % tabs.length : (idx - 1 + tabs.length) % tabs.length;
+                tabs[next].focus();
+            }
+        });
+    });
+
+    // show default tab
+    var defaultTab = document.querySelector('.pricing-tab[aria-selected="true"]') || tabs[0];
+    if (defaultTab) showTab(defaultTab.getAttribute('data-tab'));
 }

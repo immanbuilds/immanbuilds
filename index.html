@@ -279,81 +279,196 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="py-28 sm:py-36 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="mb-16 text-center">
-            <h2 class="font-headline text-4xl sm:text-5xl font-bold tracking-tight mb-4">Simple Pricing. Real Results.</h2>
-            <p class="text-slate-600 max-w-2xl mx-auto">Choose a plan that fits your business goals</p>
+    <section id="pricing" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="mb-10 text-center">
+            <h2 class="font-headline text-4xl sm:text-5xl font-bold tracking-tight mb-3">Pricing</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Modern, clear plans for Website development and SEO pick what suits you.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 items-stretch">
-            <!-- Starter -->
-            <div class="pricing-card bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-10 flex flex-col justify-between hover:shadow-2xl transition-transform transform hover:-translate-y-1 h-full">
-                <div>
-                        <div class="flex items-center justify-between mb-5">
-                        <h3 class="text-lg md:text-xl font-semibold">Single Page Website</h3>
-                        <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-700">Best for Beginners</span>
-                    </div>
-                    <p class="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Starting from ₹2,499</p>
-                    <p class="text-sm text-slate-500 mb-6">Hosting & domain not included</p>
-
-                    <ul class="space-y-4 text-slate-700 mb-6 pl-1">
-                        <li class="pl-1">1 page modern design</li>
-                        <li class="pl-1">Mobile responsive</li>
-                        <li class="pl-1">WhatsApp / Contact integration</li>
-                        <li class="pl-1">Basic SEO</li>
-                    </ul>
-                </div>
-
-                <div class="mt-4">
-                    <a href="https://wa.me/919894803044" class="inline-block w-full text-center px-5 py-3 rounded-lg bg-slate-900 text-white font-semibold hover:opacity-95 transition">Get Started</a>
-                </div>
+        <div class="max-w-6xl mx-auto px-2">
+            <div class="flex items-center justify-center gap-3 mb-8 pricing-tabs relative" role="tablist" aria-label="Pricing tabs">
+                <button class="pricing-tab px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 bg-white shadow-sm hover:bg-slate-50" data-tab="web" aria-selected="true" role="tab">Web Development</button>
+                <button class="pricing-tab px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 bg-white shadow-sm hover:bg-slate-50" data-tab="seo" aria-selected="false" role="tab">SEO</button>
+                <button class="pricing-tab px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 bg-white shadow-sm hover:bg-slate-50" data-tab="combo" aria-selected="false" role="tab">Combo</button>
             </div>
 
-            <!-- Growth (Most Popular) -->
-            <div class="pricing-card most-popular bg-white rounded-2xl p-8 md:p-10 flex flex-col justify-between border-2 border-primary shadow-xl transform hover:scale-[1.02] transition-all h-full relative z-10">
-                <div>
-                    <div class="flex items-center justify-between mb-5">
-                        <h3 class="text-lg md:text-xl font-semibold">Business Website</h3>
-                        <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-yellow-50 text-yellow-800">⭐ Most Popular</span>
-                    </div>
-                    <p class="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Starting from ₹7,999</p>
+            <div class="tab-contents">
+                <!-- Web Development Tab -->
+                <div id="tab-web" class="tab-content grid grid-cols-1 md:grid-cols-4 gap-6" role="tabpanel">
+                    <!-- Launch -->
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-lg font-semibold">Launch</h3>
+                                <span class="badge text-xs px-2 py-1 rounded-full bg-amber-50 text-amber-700">Limited Offer</span>
+                            </div>
+                            <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                                <li>Single page website</li>
+                                <li>Mobile responsive</li>
+                                <li>WhatsApp / Contact integration</li>
+                                <li>SEO-friendly development</li>
+                            </ul>
+                            <div class="mb-2 text-sm text-slate-500">Original: <span class="price-original">₹2,999</span></div>
+                            <div class="flex items-baseline gap-3 mb-3">
+                                <div class="text-2xl font-extrabold text-slate-900">₹1,999</div>
+                                <div class="savings-badge text-sm text-white bg-emerald-600 px-2 py-1 rounded">Save ₹1,000</div>
+                            </div>
+                            <div class="text-xs text-slate-500">Founding offer for first 10 projects</div>
+                        </div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-primary-container text-white font-semibold">Get Started</a>
+                    </article>
 
-                    <ul class="space-y-4 text-slate-700 mb-6 pl-1">
-                        <li class="pl-1">4–6 pages website</li>
-                        <li class="pl-1">Custom design</li>
-                        <li class="pl-1">Basic SEO setup</li>
-                        <li class="pl-1">Contact forms + WhatsApp</li>
-                        <li class="pl-1">Speed optimization</li>
-                    </ul>
+                    <!-- Scale -->
+                    <article class="card most-popular bg-gradient-to-b from-white to-slate-50 rounded-2xl border-2 border-primary p-6 flex flex-col justify-between relative">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-lg font-semibold">Scale</h3>
+                                <span class="pill text-sm px-2 py-1 rounded-full bg-yellow-50 text-yellow-800">Most Popular</span>
+                            </div>
+                            <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                                <li>4–6 pages website</li>
+                                <li>SEO-friendly structure</li>
+                                <li>Contact form</li>
+                                <li>Speed optimization</li>
+                                <li>Includes all Launch features</li>
+                            </ul>
+                            <div class="mb-2 text-sm text-slate-500">Original: <span class="price-original">₹8,999</span></div>
+                            <div class="flex items-baseline gap-3 mb-3">
+                                <div class="text-2xl font-extrabold text-slate-900">₹6,999</div>
+                                <div class="savings-badge text-sm text-white bg-emerald-600 px-2 py-1 rounded">Save ₹2,000</div>
+                            </div>
+                            <div class="text-xs text-slate-500">Founding offer for first 10 projects</div>
+                        </div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-slate-900 text-white font-semibold">Book Now</a>
+                    </article>
+
+                    <!-- Dominate -->
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-lg font-semibold">Dominate</h3>
+                                <span class="badge text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Custom</span>
+                            </div>
+                            <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                                <li>6–10 pages website</li>
+                                <li>Premium UI/UX</li>
+                                <li>Full SEO setup</li>
+                                <li>Google Business optimization</li>
+                                <li>1 month support</li>
+                            </ul>
+                            <div class="mb-2 text-sm text-slate-500">Original: <span class="price-original">₹14,999</span></div>
+                            <div class="flex items-baseline gap-3 mb-3">
+                                <div class="text-2xl font-extrabold text-slate-900">₹12,999</div>
+                                <div class="savings-badge text-sm text-white bg-emerald-600 px-2 py-1 rounded">Save ₹2,000</div>
+                            </div>
+                            <div class="text-xs text-slate-500">Custom based on requirements</div>
+                        </div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-primary-container text-white font-semibold">Get Started</a>
+                    </article>
+
+                    <!-- Custom Builds -->
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-lg font-semibold">Custom Builds</h3>
+                                <span class="badge text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Contact</span>
+                            </div>
+                            <p class="text-slate-700 mb-4 text-sm">Tailored solutions for complex requirementse‑commerce, integrations, membership platforms, enterprise features, and more. Pricing custom to scope.</p>
+                            <p class="text-slate-700 mb-4 text-sm">For custom projects, contact to discuss requirements and get a quote.</p>
+
+                    
+                            <div class="text-xs text-slate-500"></div>
+                        </div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-slate-900 text-white font-semibold">Contact</a>
+                    </article>
                 </div>
 
-                <div class="mt-4">
-                    <a href="https://wa.me/919894803044" class="inline-block w-full text-center px-5 py-3 rounded-lg bg-primary-container text-white font-semibold hover:opacity-95 transition">Get Started</a>
-                </div>
-            </div>
+                <!-- SEO Tab -->
+                <div id="tab-seo" class="tab-content grid grid-cols-1 md:grid-cols-3 gap-6 hidden" role="tabpanel">
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+                        <h3 class="text-lg font-semibold mb-3">SEO Setup (One-time)</h3>
+                        <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                            <li>Website audit</li>
+                            <li>Keyword research (5–10)</li>
+                            <li>On-page SEO setup</li>
+                            <li>Google Search Console + Analytics</li>
+                        </ul>
+                        <div class="text-2xl font-extrabold text-slate-900">₹2,999</div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-slate-900 text-white font-semibold">Get Started</a>
+                    </article>
 
-            <!-- Pro -->
-            <div class="pricing-card bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-10 flex flex-col justify-between hover:shadow-2xl transition-transform transform hover:-translate-y-1 h-full">
-                <div>
-                    <div class="flex items-center justify-between mb-5">
-                        <h3 class="text-lg md:text-xl font-semibold">Premium Website + SEO</h3>
-                        <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-700">For Serious Businesses</span>
-                    </div>
-                    <p class="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">Starting from ₹14,999</p>
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+                        <h3 class="text-lg font-semibold mb-3">SEO Growth</h3>
+                        <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                            <li>Keyword tracking (5–10)</li>
+                            <li>On-page updates</li>
+                            <li>Google Business updates</li>
+                            <li>Monthly report</li>
+                        </ul>
+                        <div class="text-2xl font-extrabold text-slate-900">₹3,999<span class="text-sm font-medium">/month</span></div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-primary-container text-white font-semibold">Book Now</a>
+                    </article>
 
-                    <ul class="space-y-4 text-slate-700 mb-6 pl-1">
-                        <li class="pl-1">6–10 pages</li>
-                        <li class="pl-1">Advanced UI/UX design</li>
-                        <li class="pl-1">Full SEO setup</li>
-                        <li class="pl-1">Google Business optimization</li>
-                        <li class="pl-1">Analytics setup</li>
-                        <li class="pl-1">1 month support</li>
-                    </ul>
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+                        <h3 class="text-lg font-semibold mb-3">SEO Pro</h3>
+                        <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                            <li>Keyword tracking (10–15)</li>
+                            <li>On-page improvements</li>
+                            <li>Competitor analysis</li>
+                            <li>Monthly report</li>
+                        </ul>
+                        <div class="text-2xl font-extrabold text-slate-900">₹6,999<span class="text-sm font-medium">/month</span></div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-slate-900 text-white font-semibold">Get Started</a>
+                    </article>
                 </div>
 
-                <div class="mt-4">
-                    <a href="https://wa.me/919894803044" class="inline-block w-full text-center px-5 py-3 rounded-lg bg-slate-900 text-white font-semibold hover:opacity-95 transition">Get Started</a>
+                <!-- Combo Tab -->
+                <div id="tab-combo" class="tab-content grid grid-cols-1 md:grid-cols-3 gap-6 hidden" role="tabpanel">
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+                        <h3 class="text-lg font-semibold mb-3">Launch Combo</h3>
+                        <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                            <li>Single page website</li>
+                            <li>SEO Setup</li>
+                        </ul>
+                        <div class="mb-2 text-sm text-slate-500">Original: <span class="price-original">₹5,998</span></div>
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <div class="text-2xl font-extrabold text-slate-900">₹3,999</div>
+                            <div class="savings-badge text-sm text-white bg-emerald-600 px-2 py-1 rounded">Save ₹1,999</div>
+                        </div>
+                        <div class="text-xs text-slate-500">Limited offer</div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-primary-container text-white font-semibold">Get Started</a>
+                    </article>
+
+                    <article class="card most-popular bg-gradient-to-b from-white to-slate-50 rounded-2xl border-2 border-primary p-6 flex flex-col justify-between relative">
+                        <h3 class="text-lg font-semibold mb-3">Scale Combo</h3>
+                        <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                            <li>4–6 pages website</li>
+                            <li>SEO Setup + 1 month SEO Growth</li>
+                        </ul>
+                        <div class="mb-2 text-sm text-slate-500">Original: <span class="price-original">₹12,998</span></div>
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <div class="text-2xl font-extrabold text-slate-900">₹9,999</div>
+                            <div class="savings-badge text-sm text-white bg-emerald-600 px-2 py-1 rounded">Save ₹2,999</div>
+                        </div>
+                        <div class="text-xs text-slate-500">Best value</div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-slate-900 text-white font-semibold">Book Now</a>
+                    </article>
+
+                    <article class="card bg-white rounded-2xl shadow-md border border-slate-100 p-6">
+                        <h3 class="text-lg font-semibold mb-3">Dominate Combo</h3>
+                        <ul class="text-slate-700 mb-4 space-y-2 text-sm">
+                            <li>6–10 pages website</li>
+                            <li>SEO Setup + 2 months SEO Growth</li>
+                        </ul>
+                        <div class="mb-2 text-sm text-slate-500">Original: <span class="price-original">₹19,997</span></div>
+                        <div class="flex items-baseline gap-3 mb-3">
+                            <div class="text-2xl font-extrabold text-slate-900">₹16,999</div>
+                            <div class="savings-badge text-sm text-white bg-emerald-600 px-2 py-1 rounded">Save ₹2,998</div>
+                        </div>
+                        <a href="https://wa.me/919894803044" class="btn mt-6 inline-block w-full text-center px-4 py-2 rounded-lg bg-primary-container text-white font-semibold">Get Started</a>
+                    </article>
                 </div>
+                <p class="text-center text-sm text-slate-500 mt-6">Note: Domain &amp; hosting are extra and not included in development.</p>
             </div>
         </div>
     </section>
